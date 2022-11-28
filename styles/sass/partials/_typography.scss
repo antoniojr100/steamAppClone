@@ -1,0 +1,49 @@
+@use "./variables";
+
+// Anybody Regular, Anybody Bold, Lato Regular, Lato Bold
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+html {
+    // 1rem = 20px
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a
+{
+    font-family: 'Anybody', cursive, 'Lato', sans-serif;
+    color: variables.$lightCyan;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+input{
+    width: 30%;
+}
+
+select,
+option{
+    color: variables.$steamBlack;
+}
+
+select{
+    font-family: 'Anybody', cursive;    
+}
+
+#currencyOption,
+option{
+    font-family: 'Lato', sans-serif; 
+}
+
+label{
+    font-family: 'Anybody', cursive;
+    color: variables.$green;
+}

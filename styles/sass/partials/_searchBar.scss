@@ -1,0 +1,39 @@
+@use "./variables";
+
+// Form
+.formSection {
+    background-color: variables.$steamBlack;
+    padding: 25px 0;
+}
+
+// Search Bar
+#searchBar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    align-self: center;
+
+}
+
+select {
+    padding: 5px 20px;
+    min-width: 8%;
+    border-radius: 8px;
+    border: none;
+    margin: 0 3% 0 1%;
+    border: 2px solid variables.$green;
+}
+
+input {
+    min-width: 50%;
+    margin-left: 1%;
+    border-radius: 8px;
+    border: 2px solid variables.$green;
+        &::placeholder {
+            text-align: center;
+        }
+}

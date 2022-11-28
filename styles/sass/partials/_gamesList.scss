@@ -1,0 +1,88 @@
+@use "./variables";
+
+// Games Section
+.gamesSection {
+    background: linear-gradient(variables.$darkBlue, variables.$gradientBlue);
+    border: 2px solid variables.$steamBlack;
+    min-height: 13vh;
+}
+
+// Games ul + li
+.gamesUl {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+    justify-content: space-evenly;
+        .newLiElement {
+            border-radius: 8px;
+            background-color: variables.$gunMetal;
+            // width: calc((100% /3) - 100px);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            gap: 20px;
+            // border: 2px solid red;
+                img {
+                    // images are TOO SMALL and therefore BLURRY
+                    width: auto;
+                }
+
+                h2, p {
+                    width: calc((100% / 2) - 40px);
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+
+                }
+        }
+}
+
+// Games Info Flex Order
+.newLiElement p {
+    order: 2;
+    font-size: 1.2rem;
+        a {
+            color: variables.$green;
+        }
+}
+
+.newLiElement h2 {
+        :hover,
+        :focus {
+            color: variables.$green;
+        }
+        a {
+            text-decoration: none;
+        }
+}
+
+// Platforms Styles   
+.platformsUl {
+width: 50%;
+display: flex;
+justify-content: center;
+gap: 30px;
+padding-left: 0;
+    li {
+        text-align: center;
+            i {
+                font-size: 30px;
+                    color: variables.$lightCyan;
+            }
+    }
+}
+
+// Error Message Styles
+.noResults {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0 80px 0;
+}
+

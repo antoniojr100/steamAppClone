@@ -1,0 +1,50 @@
+@use "./variables";
+
+// Logo
+.navLogo {
+    a {
+        text-decoration: none;
+            &:hover,
+            &:focus {
+                color: variables.$green;
+            }
+    }
+    
+    
+}
+
+// Nav Bar
+.navBar{
+    width: 100%;
+    display: flex;
+    background-color: variables.$steamBlack;
+        .navFlex {
+            display: flex;
+            justify-content: space-between;
+        }
+            .navUl {
+                width: fit-content;
+                justify-content: space-between;
+                gap: 15px;
+                padding: 0;
+                display: flex;
+                color: variables.$green;
+                align-self: center;
+
+                    a {
+                        text-decoration: none;
+                        color: variables.$green;
+                        align-items: center;
+                            &:hover,
+                            &:focus {
+                                text-decoration: underline;
+                            }
+                    }
+            }
+                
+}
+
+// Hamburger Menu
+.hamburgerMenu {
+display: none;
+}

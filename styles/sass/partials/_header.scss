@@ -1,0 +1,43 @@
+@use "./variables";
+
+// Header Styles
+header {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/consoles.png');
+    background-color: variables.$darkBlue;
+
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+// Welcome Message
+.welcome {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+// Instructions
+.instructionsContainer {
+    display: flex;
+    justify-content: center;
+        .instructions {
+            width: fit-content;
+            li {
+                    h5 {
+                        margin: 10px auto;
+                    }
+            }
+        }
+
+}

@@ -1,0 +1,20 @@
+@use "./variables";
+
+// Footer Styles
+footer {
+    background-color: variables.$steamBlack;
+    padding: 1% 0;
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+            a {
+                text-decoration: none;
+                color: variables.$green;
+                    &:hover,
+                    &:focus {
+                        text-decoration: underline;
+                    }
+            }
+    }
+}
